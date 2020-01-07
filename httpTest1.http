@@ -1,0 +1,30 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection) or
+# paste cURL into the file and request will be converted to HTTP Request format.
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+POST http://localhost:3000/zoos/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="field-name"
+
+field-value
+--WebAppBoundary--
+
+###
+
+
+{
+  fieldname: 'avatar',
+  originalname: 'cage1.jpeg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: 'uploads/',
+  filename: 'd4b26e639f9510c0b65af003c1555932',
+  path: 'uploads/d4b26e639f9510c0b65af003c1555932',
+  size: 15081
+}
